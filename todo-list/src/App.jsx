@@ -1,10 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-
+  const[tasks, setTasks] = useState([])
+  const[input, setInput] = useState("")
 
   return (
     <>
@@ -16,13 +15,15 @@ function App() {
         </div>
       </header>
 
-      <ul id='myUL'>
-        <li>Get a Job for summer 2026!</li>
-        <li>Join a club by next week!</li>
-        <li>Cry about College for an hour!</li>
-      </ul>
+      <div id='ul-container'>
+        <ul id='myUL'>
+          <li><input type="checkbox" id='todo-checkbox'/>Get a Job for summer 2026!</li>
+          <li><input type="checkbox" id='todo-checkbox'/>Join a club by next week!</li>
+          <li><input type="checkbox" id='todo-checkbox'/>Cry about College for an hour!</li>
+        </ul>
+      </div>
 
-      <button>Clear</button>
+      <button id='clear-button'>Clear</button>
       
 
 
