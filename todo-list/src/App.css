@@ -5,38 +5,51 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.todo-title{
+  position: absolute;
+  top: 1px;
+  left: 200px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#todo-input{
+  margin-right: 20px;
+  display: flex;
+  overflow: hidden;
+  flex: auto;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#todo-add{
+  margin-right: 10px;
+}
+#todo-input::placeholder{
+  color: white;
+  font-size: 14px;
+  
+}
+#todo-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  flex-grow: 4;
+  right: 150px;
+
 }
 
-.card {
-  padding: 2em;
+ul{
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+
+#my-UL{
 }
